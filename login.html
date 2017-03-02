@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="rozgaar">
+<head>
+	<meta charset="utf-8">
+	<title>Rozgaar</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+</head>
+<body>
+	<div class="container">	
+		<h3>Job Card ID Daliye:</h3>
+		<div ng-controller="validUser" class="input-group input-group-md">
+			<span class="input-group-addon">Card No.</span>
+				<input type="text" placeholder="Job ID" ng-model="jobID" class="form-control">
+			<span class="input-group-btn">
+			<button class="btn btn-primary btn-md" ng-click="submitDet()">Login</button>
+			</span>
+		</div>
+		<br><br>
+		<h3>Scan QR Code:</h3>
+		<div class="jumbotron">
+			<fieldset>
+				<p><center> QR Logic </center></p>
+			</fieldset>
+		</div>
+	</div>
+</div>
+<script src="js/angular.min.js"></script>
+<script src="js/app.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+</body>
+</html>
