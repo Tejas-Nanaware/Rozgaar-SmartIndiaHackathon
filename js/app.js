@@ -7,6 +7,7 @@ rozgaar.controller('validUser', function($scope){
 	function check(data){
 		if($scope.jobID === "admin"){
 			alert("Welcome to Rozgaar");
+			window.location.href = 'postlogin.html';
 		}
 	}
 });
