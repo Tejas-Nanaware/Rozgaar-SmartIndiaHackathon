@@ -3,10 +3,42 @@
 <head>
 	<meta charset="utf-8">
 	<title>Rozgaar</title>
+	<link rel="stylesheet" href="css/login.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 </head>
 <body>
+			<div class="my-image">
+		<img src="media/images/rozgaar.png" alt="Rozgaar" class="image-responsive" width="100%" height="100%">
+		</div>
+	<!--login modal-->
+<div id="loginModal" class="modal show" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+  <div class="modal-content">
+      <div class="modal-header">
+          <h3 class="text-center">Enter Job Card No.</h3>
+      </div>
+      <div class="modal-body">
+          <form class="form col-md-12 center-block">
+            <div ng-controller="loginCtrl" class="input-group input-group-md">
+				<input type="text" placeholder="Job ID" ng-model="jobID" class="form-control">
+				<span class="input-group-btn">
+				<button class="btn btn-primary btn-md" ng-click="submitDet()">Login</button>
+				</span>
+			</div>
+          </form>
+      </div>
+      <div class="modal-footer">
+		  <h3 class="text-center">Scan QR Code:</h3>
+		<div class="jumbotron">
+				<p><center> QR Logic </center></p>
+		</div>
+      </div>
+  </div>
+  </div>
+</div>
+
+<!--old code
 	<div class="container">	
 		<h3>Job Card ID Daliye:</h3>
 		<div ng-controller="loginCtrl" class="input-group input-group-md">
@@ -24,7 +56,7 @@
 			</fieldset>
 		</div>
 	</div>
-</div>
+</div>-->
 <script src="js/angular.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
