@@ -15,3 +15,5 @@ Idea:
 Our Tech Stack:
 
 Folders and its distribution:
+
+Project development is over
